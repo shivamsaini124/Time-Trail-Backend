@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require("mongoose");
 
 const User = require("./routes/user");
+const Story = require("./routes/story");
 
 const app = express();
 
@@ -12,7 +13,7 @@ const DB_URL = process.env.DB_URL;
 app.use(express.json());
 
 app.use("/api/v1/user",User);
-
+app.use("/api/v1/story", Story);
 
 
 const main = async () => {

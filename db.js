@@ -11,7 +11,8 @@ const userSchema = new Schema({
 
 const storySchema = new Schema({
     title: { type: String, required: true },
-    content: { type: String, required: true }
+    content: { type: String, required: true },
+    ending: {type:String, required: true}
 })
 
 const runningStorySchema = new Schema({
